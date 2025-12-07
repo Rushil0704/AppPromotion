@@ -14,7 +14,7 @@ const Insights = () => {
 			date: "04 Dec 2025",
 			authorImage:
 				"https://factsscan.com/wp-content/uploads/2025/07/sweety-patel-profile.png",
-			href: "/insights/hidden-sugars",
+			href: "/blog/hidden-sugars",
 		},
 		{
 			id: 2,
@@ -27,7 +27,7 @@ const Insights = () => {
 			date: "27 Nov 2025",
 			authorImage:
 				"https://factsscan.com/wp-content/uploads/2025/07/sweety-patel-profile.png",
-			href: "/insights/organic-food-guide",
+			href: "/blog/organic-food-guide",
 		},
 		{
 			id: 3,
@@ -40,7 +40,7 @@ const Insights = () => {
 			date: "17 Nov 2025",
 			authorImage:
 				"https://factsscan.com/wp-content/uploads/2025/07/sweety-patel-profile.png",
-			href: "/insights/gut-health",
+			href: "/blog/gut-health",
 		},
 	];
 
