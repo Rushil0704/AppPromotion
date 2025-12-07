@@ -5,6 +5,43 @@
   font-family: 'poppins', sans-serif;
 }
 
+.scan_img::before {
+  content: '';
+  background-image: url(https://factsscan.com/wp-content/themes/factsscan/assets/images/Group_right.png);
+  width: 60px;
+  background-repeat: no-repeat;
+  height: 100%;
+  gap: 0;
+  background-size: contain;
+  display: inline-block;
+  position: absolute;
+  right: -33px;
+  top: -15px;
+}
+
+.scan_img::after {
+  content: '';
+  background-image: url(https://factsscan.com/wp-content/themes/factsscan/assets/images/border.png);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 100%;
+  left: 60%;
+  transform: translateX(-50%);
+}
+
+.scan_img {
+  position: relative;
+  color: #00B249;
+  display: inline-block;
+  font-family: 'Poppins';
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 62.47px;
+}
+
 .container {
   width: 100%;
   padding: 0 20px;

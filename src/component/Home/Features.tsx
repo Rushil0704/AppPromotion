@@ -1,3 +1,5 @@
+import Heading from "../Common/Heading";
+
 const Features = () => {
   const features = [
     {
@@ -41,9 +43,7 @@ const Features = () => {
   return (
     <div className="pt-16 pb-12">
       <div className="container mx-auto px-4 gap-55 flex flex-col">
-        <h2 className="text-center font-poppins text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-          App<span className="text-green-600"> Features</span>
-        </h2>
+        <Heading text="App" heighlight="Features" />
 
         {/* Features Grid - 2 rows x 3 columns */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-60">

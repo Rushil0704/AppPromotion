@@ -1,4 +1,4 @@
-import React from "react";
+import Heading from "../Common/Heading";
 
 const HowItWorks = () => {
 	const steps = [
@@ -23,9 +23,7 @@ const HowItWorks = () => {
 		<div className="pt-16 pb-20">
 			<div className="container mx-auto">
 				{/* Heading */}
-				<h2 className="text-center mb-16 text-3xl md:text-4xl lg:text-5xl font-bold">
-					How it <span className="text-green-600">works</span>
-				</h2>
+				<Heading text="How It" heighlight="Works" />
 
 				<div className="flex flex-col lg:flex-row items-center justify-between gap-16">
 					{/* Left Image */}
@@ -40,7 +38,7 @@ const HowItWorks = () => {
 					{/* Right Timeline */}
 					<div className="w-full lg:w-[59%] relative">
 						{/* Vertical Line */}
-						<div className="absolute left-[14px] top-0 bottom-0 w-[3px] bg-green-500"></div>
+						<div className="absolute left-3.5 top-0 bottom-0 w-[3px] bg-green-500"></div>
 
 						<div className="space-y-12">
 							{steps.map((step, index) => (
@@ -50,7 +48,7 @@ const HowItWorks = () => {
 								>
 									{/* Dot */}
 									<div className="relative flex flex-col items-center">
-										<div className="w-7 h-7 rounded-full bg-white border-[4px] border-green-500 z-10"></div>
+										<div className="w-7 h-7 rounded-full bg-white border-4 border-green-500 z-10"></div>
 									</div>
 
 									{/* Curved Content Box */}
