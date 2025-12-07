@@ -2,7 +2,7 @@ import Heading from '../Common/Heading';
 
 const Product = () => {
 	return (
-		<div className='container pt-19 pb-16 flex flex-col gap-10'>
+		<div className='pt-20 pb-16 container flex flex-col gap-16'>
 			<Heading text="Know your" heighlight="product" />
 			<div className=' flex flex-col'>
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">

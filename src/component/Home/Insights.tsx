@@ -1,9 +1,8 @@
-import React from 'react'
 import Heading from '../Common/Heading';
 import Card from '../Common/Card';
 
 const Insights = () => {
-  const insightsData = [
+	const insightsData = [
 		{
 			id: 1,
 			image: "https://factsscan.com/wp-content/uploads/2025/12/Hidden-Sugars-in-Packaged-Foods_-50-Names-You-Must-Know-Before-Buying.webp",
@@ -43,16 +42,11 @@ const Insights = () => {
 				"https://factsscan.com/wp-content/uploads/2025/07/sweety-patel-profile.png",
 			href: "/insights/gut-health",
 		},
-  ];
+	];
 
-  return (
-		<>
-			<div className="pt-19 pb-16">
-				<div className="container">
-					<Heading text="Health" heighlight="Insights" />
-				</div>
-			</div>
-
+	return (
+		<div className="pt-20 pb-16 container flex flex-col gap-16">
+			<Heading text="Health" heighlight="Insights" />
 			<div className="container pb-20">
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 gap-x-[30px]">
 					{insightsData.map((item) => (
@@ -77,8 +71,9 @@ const Insights = () => {
 					</a>
 				</div>
 			</div>
-		</>
-  );
+		</div>
+
+	);
 }
 
 export default Insights

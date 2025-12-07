@@ -41,38 +41,35 @@ const Features = () => {
   ];
 
   return (
-    <div className="pt-16 pb-12">
-      <div className="container mx-auto px-4 gap-70 flex flex-col">
-        <Heading text="App" heighlight="Features" />
-
-        {/* Features Grid - 2 rows x 3 columns */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-60">
-          {features.map((feature, index) => (
-            <div key={index} className="flex flex-col items-center text-center bg-white rounded-[40px] shadow-lg p-8 relative pt-30">
-              {/* Feature Card */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 -top-1/2 z-10 h-full w-full">
-                {/* Circular Background */}
-                <div className=" flex items-center justify-center">
-                  <img
-                    src={feature.icon}
-                    alt={feature.title}
-                    className="w-32 h-32 md:w-80 md:h-80 object-contain"
-                  />
-                </div>
+    <div className="pt-20 pb-16 container flex flex-col gap-70">
+      <Heading text="App" heighlight="Features" />
+      {/* Features Grid - 2 rows x 3 columns */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-60">
+        {features.map((feature, index) => (
+          <div key={index} className="flex flex-col items-center text-center bg-white rounded-[40px] shadow-lg p-8 relative pt-30">
+            {/* Feature Card */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 -top-1/2 z-10 h-full w-full">
+              {/* Circular Background */}
+              <div className=" flex items-center justify-center">
+                <img
+                  src={feature.icon}
+                  alt={feature.title}
+                  className="w-32 h-32 md:w-80 md:h-80 object-contain"
+                />
               </div>
-
-              {/* Title */}
-              <h3 className="text-xl md:text-[30px] font-medium text-black mt-6 mb-4 ">
-                {feature.title}
-              </h3>
-
-              {/* Description */}
-              <p className="text-gray-600 text-sm md:text-[20px] leading-relaxed max-w-xs">
-                {feature.description}
-              </p>
             </div>
-          ))}
-        </div>
+
+            {/* Title */}
+            <h3 className="text-xl md:text-[30px] font-medium text-black mt-6 mb-4 ">
+              {feature.title}
+            </h3>
+
+            {/* Description */}
+            <p className="text-gray-600 text-sm md:text-[20px] leading-relaxed max-w-xs">
+              {feature.description}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );
