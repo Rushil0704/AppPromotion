@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Header from './component/Header'
 import Home from './Pages/Home'
+import { Footer } from './component/Footer'
 
 const App = () => {
   const [showScrollTop, setShowScrollTop] = useState(false)
@@ -29,6 +30,7 @@ const App = () => {
     <>
       <Header />
       <Home />
+      <Footer/>
       
       {/* Back to Top Button */}
       {showScrollTop && (
