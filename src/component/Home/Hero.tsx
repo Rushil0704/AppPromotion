@@ -7,7 +7,7 @@ const Hero = () => {
 					<div className="sm:mb-[200px] w-full md:w-auto flex flex-col justify-center items-center md:items-start md:justify-start text-center md:text-left">
 						<h1 className="font-poppins text-2xl md:text-5xl lg:text-6xl font-bold leading-8 md:leading-[62.47px] mb-8 md:mb-8 ">
 							Scan, Analyze, and Choose Healthier Food with{" "}
-							<span className="text-green-600">FactsScan</span>
+							<span className="scan_img">FactsScan</span>
 						</h1>
 
 						<p className="font-poppins text-xl md:text-3xl font-normal leading-7 md:leading-[39.52px] mb-8 md:mb-[38px] text-gray-500">

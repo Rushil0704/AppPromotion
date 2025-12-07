@@ -2,7 +2,7 @@ import Heading from "../component/Common/Heading"
 
 const RemoveAccount = () => {
     return (
-        <div className="min-h-screen py-16">
+        <div className="py-16">
             <div className="container mx-auto px-4 ">
                 <div className="bg-linear-to-b from-green-50 to-green-100 p-4 lg:p-20 flex flex-col gap-5 lg:gap-16 rounded-2xl">
                     <Heading text="Account" heighlight="Deletion Request" className="text-center mb-12" />
