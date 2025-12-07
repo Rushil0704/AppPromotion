@@ -42,7 +42,7 @@ const Features = () => {
 
   return (
     <div className="pt-16 pb-12">
-      <div className="container mx-auto px-4 gap-55 flex flex-col">
+      <div className="container mx-auto px-4 gap-70 flex flex-col">
         <Heading text="App" heighlight="Features" />
 
         {/* Features Grid - 2 rows x 3 columns */}

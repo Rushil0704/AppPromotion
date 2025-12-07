@@ -21,7 +21,7 @@ const HowItWorks = () => {
 
 	return (
 		<div className="pt-16 pb-20">
-			<div className="container mx-auto">
+			<div className="container mx-auto flex flex-col gap-16">
 				{/* Heading */}
 				<Heading text="How It" heighlight="Works" />
 

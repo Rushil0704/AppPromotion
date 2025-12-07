@@ -1,19 +1,14 @@
-import React from 'react'
 import Heading from '../Common/Heading';
 
 const Product = () => {
-  return (
-		<div>
-			<div className="pt-19 pb-16">
-				<div className="container">
-					<Heading text="Know your" heighlight="product" />
-				</div>
-			</div>
-			<div className="container pb-20">
-				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+	return (
+		<div className='container pt-19 pb-16 flex flex-col gap-10'>
+			<Heading text="Know your" heighlight="product" />
+			<div className=' flex flex-col'>
+				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 					{/* Left Section - Product Image and Details */}
 					<div className="flex flex-col items-center">
-						<div className="relative mb-6">
+						<div className="relative">
 							<img
 								src="https://factsscan.com/wp-content/uploads/2025/07/Know-your-product-image-1.png"
 								className="w-[660px] h-[500px]"
@@ -38,11 +33,9 @@ const Product = () => {
 						</p>
 					</div>
 				</div>
-			</div>
 
-			{/* Second Row */}
-			<div className="container pb-20">
-				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+				{/* Second Row */}
+				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 					{/* Left Section - Description */}
 					<div className="flex flex-col justify-center px-4 lg:px-8">
 						<h3 className="text-4xl font-bold mb-4 leading-tight">
@@ -59,7 +52,7 @@ const Product = () => {
 
 					{/* Right Section - Product Image */}
 					<div className="flex flex-col items-center">
-						<div className="relative mb-6">
+						<div className="relative">
 							<img
 								src="https://factsscan.com/wp-content/uploads/2025/07/Know-your-product-image-2.png"
 								className="w-[660px] h-[500px]"
@@ -70,7 +63,7 @@ const Product = () => {
 				</div>
 			</div>
 		</div>
-  );
+	);
 }
 
 export default Product
