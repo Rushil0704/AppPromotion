@@ -1,6 +1,3 @@
-import React from 'react'
-
-
 const Hero = () => {
 	return (
 		<div className="relative w-full bg-white overflow-hidden">
