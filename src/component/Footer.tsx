@@ -6,7 +6,7 @@ export const Footer = () => {
 			<div className="container">
 				<div className="pb-[26px] mb-[26px] flex justify-between items-center gap-10 flex-wrap border-b border-[#646568]">
 					<div className="">
-						<a href="https://factsscan.com/">
+						<a href="#">
 							<img
 								src="https://factsscan.com/wp-content/uploads/2025/09/factsscan_logo.svg"
 								alt=""
@@ -14,13 +14,13 @@ export const Footer = () => {
 						</a>
 					</div>
 					<div className="flex gap-4">
-						<a href="https://apps.apple.com/in/app/factsscan/id6743693074">
+						<a href="#">
 							<img
 								src="https://factsscan.com/wp-content/uploads/2025/09/app_store.svg"
 								alt=""
 							/>
 						</a>
-						<a href="https://play.google.com/store/apps/details?id=com.dws.factsscan">
+						<a href="#">
 							<img
 								src="https://factsscan.com/wp-content/uploads/2025/09/google_play_en.svg.svg"
 								alt=""
@@ -32,7 +32,7 @@ export const Footer = () => {
 					<ul className="flex flex-wrap gap-[30px]">
 						<li>
 							<a
-								href="https://factsscan.com/blog/"
+								href="#"
 								className="text-[#64656] text-[18px] leading-7 font-medium"
 							>
 								Blog
@@ -40,7 +40,7 @@ export const Footer = () => {
 						</li>
 						<li>
 							<a
-								href="https://factsscan.com/factsscan-community/"
+								href="#"
 								className="text-[#64656] text-[18px] leading-7 font-medium"
 							>
 								Community
@@ -48,7 +48,7 @@ export const Footer = () => {
 						</li>
 						<li>
 							<a
-								href="https://factsscan.com/terms-condition/"
+								href="#"
 								className="text-[#64656] text-[18px] leading-7 font-medium"
 							>
 								Terms &amp; Condition
@@ -57,7 +57,7 @@ export const Footer = () => {
 						<li>
 							<a
 								rel="privacy-policy"
-								href="https://factsscan.com/privacy-policy/"
+								href="#"
 								className="text-[#64656] text-[18px] leading-7 font-medium"
 							>
 								Privacy Policy
@@ -66,7 +66,7 @@ export const Footer = () => {
 					</ul>
 					<div className="flex items-center gap-4">
 						<a
-							href="https://www.instagram.com/facts_scan/"
+							href="#"
 							target="_blank"
 						>
 							<img
@@ -75,7 +75,7 @@ export const Footer = () => {
 							/>
 						</a>
 						<a
-							href="https://www.facebook.com/profile.php?id=61563585490665"
+							href="#"
 							target="_blank"
 						>
 							<img
@@ -84,7 +84,7 @@ export const Footer = () => {
 							/>
 						</a>
 						<a
-							href="https://www.youtube.com/@Facts_Scan"
+							href="#"
 							target="_blank"
 						>
 							<img
@@ -92,14 +92,14 @@ export const Footer = () => {
 								alt=""
 							/>
 						</a>
-						<a href="https://x.com/factsScanapp" target="_blank">
+						<a href="#" target="_blank">
 							<img
 								src="https://factsscan.com/wp-content/uploads/2025/09/twitter.svg"
 								alt=""
 							/>
 						</a>
 						<a
-							href="https://www.linkedin.com/company/factsscan/"
+							href="#"
 							target="_blank"
 						>
 							<img
@@ -113,7 +113,7 @@ export const Footer = () => {
 					<p>
 						© 2025 FactsScan | Designed and Developed by{" "}
 						<a
-							href="https://dolphinwebsolution.com/"
+							href="#"
 							target="_blank" className='underline'
 						>
 							Dolphin Web Solution
