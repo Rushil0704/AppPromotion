@@ -1,9 +1,14 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './component/Header'
+import { Footer } from './component/Footer'
 import Home from './Pages/Home'
 import Blog from './Pages/Blog'
-import { Footer } from './component/Footer'
+import BlogDetail from './Pages/BlogDetail'
+import AboutUs from './Pages/AboutUs'
+import ContactUs from './Pages/ContactUs'
+import RemoveAccount from './Pages/RemoveAccount'
+import Investor from './Pages/Investor'
 
 const App = () => {
   const [showScrollTop, setShowScrollTop] = useState(false)
@@ -30,14 +35,21 @@ const App = () => {
 
   return (
     <Router>
-      <>
+      <div className="flex flex-col min-h-screen">
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
-        </Routes>
-        <Footer/>
-        
+        <main className="grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogDetail />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/remove-account" element={<RemoveAccount />} />
+            <Route path="/investor" element={<Investor />} />
+          </Routes>
+        </main>
+        <Footer />
+
         {/* Back to Top Button */}
         {showScrollTop && (
           <button
@@ -60,7 +72,7 @@ const App = () => {
             </svg>
           </button>
         )}
-      </>
+      </div>
     </Router>
   )
 }
