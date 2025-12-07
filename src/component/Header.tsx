@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { ChevronUp, ChevronDown } from "lucide-react";
 
 const Header = () => {
@@ -6,7 +7,7 @@ const Header = () => {
 	const [isDropdownOpen, setIsDropdownOpen] = useState<string | null>(null);
 
 	const navLinks = [
-		{ label: "Blog", href: "#" },
+		{ label: "Blog", href: "/blog" },
 		{ label: "About Us", href: "#" },
 		{
 			label: "Contact Us",
@@ -22,7 +23,7 @@ const Header = () => {
 	return (
 		<div className="shadow-md sticky top-0 z-50 bg-white">
 			<div className="container">
-				<div className="flex justify-between items-center flex-wrap py-4">
+				<div className="flex justify-between items-center flex-wrap py-4 cursor-pointer">
 					{/* Logo */}
 					<div>
 						<a
@@ -55,31 +56,41 @@ const Header = () => {
 					>
 						{navLinks.map((link) => (
 							<div key={link.label} className="relative group">
-								<button
-									onClick={() =>
-										setIsDropdownOpen(
-											isDropdownOpen === link.label
-												? null
-												: link.label
-										)
-									}
-									className="text-gray-700 hover:text-gray-900 font-medium text-sm md:text-base transition-colors flex items-center gap-1"
-								>
-									{link.label}
-									{link.submenu && (
-										isDropdownOpen === link.label ? (
-											<ChevronUp
-												size={18}
-												className="transition-transform duration-300"
-											/>
-										) : (
-											<ChevronDown
-												size={18}
-												className="transition-transform duration-300"
-											/>
-										)
-									)}
-								</button>
+								{!link.submenu ? (
+									<Link
+										to={link.href}
+										className="text-gray-700 hover:text-gray-900 font-medium text-sm md:text-base transition-colors flex items-center gap-1 cursor-pointer"
+										onClick={() => setIsOpen(false)}
+									>
+										{link.label}
+									</Link>
+								) : (
+									<button
+										onClick={() =>
+											setIsDropdownOpen(
+												isDropdownOpen === link.label
+													? null
+													: link.label
+											)
+										}
+										className="text-gray-700 hover:text-gray-900 font-medium text-sm md:text-base transition-colors flex items-center gap-1 cursor-pointer"
+									>
+										{link.label}
+										{link.submenu && (
+											isDropdownOpen === link.label ? (
+												<ChevronUp
+													size={18}
+													className="transition-transform duration-300"
+												/>
+											) : (
+												<ChevronDown
+													size={18}
+													className="transition-transform duration-300"
+												/>
+											)
+										)}
+									</button>
+								)}
 
 								{/* Dropdown Menu */}
 								{link.submenu && (
