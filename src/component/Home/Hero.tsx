@@ -1,38 +1,6 @@
 const Hero = () => {
 	return (
-		<div className="relative w-full bg-white overflow-hidden">
-			{/* Top Right SVG Shape */}
-			<svg
-				className="absolute top-0 right-0 z-0"
-				width="400"
-				height="220"
-				viewBox="0 0 400 220"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-				style={{ right: 0, top: 0 }}
-			>
-				<path
-					d="M400 0C400 0 320 60 320 120C320 180 400 220 400 220V0Z"
-					fill="#FAF9E6"
-				/>
-			</svg>
-
-			{/* Bottom Left SVG Shape */}
-			<svg
-				className="absolute bottom-0 left-0 z-0"
-				width="500"
-				height="160"
-				viewBox="0 0 500 160"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-				style={{ left: 0, bottom: 0 }}
-			>
-				<path
-					d="M0 160C0 160 120 120 220 140C320 160 500 0 500 0V160H0Z"
-					fill="#D6F5E6"
-				/>
-			</svg>
-
+		<div className="relative w-full bg-white overflow-hidden home_banner">
 			<div className="container relative z-10">
 				<div className="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-12">
 					{/* Left Side - Text Content */}
@@ -71,7 +39,7 @@ const Hero = () => {
 						<img
 							src="https://factsscan.com/wp-content/uploads/2025/10/investor.gif"
 							alt="FactsScan App"
-							className="w-full max-w-sm md:max-w-md lg:max-w-lg  object-contain max-h-none md:max-h-full min-h-auto md:min-h-96 mx-auto"
+							className="w-full max-w-sm md:max-w-md lg:max-w-lg  object-contain max-h-none md:max-h-full min-h-auto md:min-h-96 mx-auto top-10 right-20 relative"
 						/>
 					</div>
 				</div>

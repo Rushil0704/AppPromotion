@@ -42,6 +42,36 @@
   line-height: 62.47px;
 }
 
+.home_banner::before {
+  content: "";
+  background-image: url(https://factsscan.com/wp-content/uploads/2025/10/home-banner_left.svg);
+  max-width: 690px;
+  width: 100%;
+  height: 100%;
+  max-height: 435px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.home_banner::after {
+  content: "";
+  background-image: url(https://factsscan.com/wp-content/uploads/2025/10/home-banner-right.svg);
+  max-width: 502px;
+  width: 100%;
+  height: 100%;
+  max-height: 610px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  right: 0;
+}
+
 .container {
   width: 100%;
   padding: 0 20px;
